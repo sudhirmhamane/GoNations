@@ -9,10 +9,15 @@ export const getCountryData = () => {
   return api.get("/all?fields=name,population,capital,flags,region");
 };
 
-// Fetch individual country — FIXED
-export const getCountryIndivData = (name) => {
-  return api.get(
-    `/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
-  );
+// Fetch individual country — Fixed with URL encoding and error handling
+export const getCountryIndivData = async (name) => {
+  try {
+    const response = await api.get(
+      `/name/${encodeURIComponent(name)}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
+    );
+    return response;
+  } catch (error) {
+    console.error("Error fetching individual country data:", error.response?.data || error.message);
+    throw error;
+  }
 };
-
