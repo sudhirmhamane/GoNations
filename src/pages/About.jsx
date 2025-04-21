@@ -8,7 +8,7 @@ const About = () => {
           About Us
         </h2>
         <p className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto">
-          Welcome to <span className="font-semibold text-yellow-400">WorldTour</span> — your gateway to explore the world, one country at a time. Discover fascinating facts about the planet, including its countries, continents, oceans, rivers, deserts, and much more.
+          Welcome to <span className="font-semibold text-yellow-400">GoNations</span> — your gateway to explore the world, one country at a time. Discover fascinating facts about the planet, including its countries, continents, oceans, rivers, deserts, and much more.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">

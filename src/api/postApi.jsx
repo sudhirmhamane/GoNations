@@ -11,8 +11,9 @@ export const getCountryData = () => {
 
 // Fetch individual country — FIXED
 export const getCountryIndivData = (name) => {
+  const encodedName = encodeURIComponent(name);
   return api.get(
-    `/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
+    `/name/${encodedName}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`
   );
 };
 
