@@ -9,12 +9,6 @@ capital, population, languages, currency, and more.
 
 ---
 
-## 🚀 Live Demo
-
-[[Click here to view the demo](#)](https://gonations.vercel.app/) 
-
----
-
 ## 📸 Preview
 
 ![GoNations review](![GoNations](https://github.com/user-attachments/assets/e8d4df9a-5a5f-462c-9e9d-659fecb4ad9e)
